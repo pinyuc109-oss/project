@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/*自己的照片*/
+.avatar {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+.avatar-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+/*名字*/
+.avatar-container::before{
+    content: "陳品妤";
+    position: absolute;
+    top:2px;
+    left: -25px;
+    background-color: #826f64;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+/*名言*/
+.saying{
+    position: absolute;
+    top: 215px;   
+    left: 100px;
+    width: 210px;
+    text-align: center;     
+    color: white;
+    background-color: #826f64;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight:bold;
+}
+/*個人資料縮排*/
+.ident{
+    margin-left: 2em;
+}
+/*個人資料*/
+.profile-right {
+    position: absolute; 
+    top: 60px;
+    left: 400px;
+    background-color: white; 
+    width: 830px; 
+    min-height: 100px;
+    padding: 20px; 
+    border-radius: 4px;
+    box-shadow: 3px 4px 8px #a7826a;
+}
+.profile-right h2 {
+    color: #826f64;
+    font-size: 20px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #826f64;
+    padding-bottom: 5px;
+}
+/*自己照片加文字堆疊*/
+.profile-left{
+    margin-top: 30px;
+    margin-left: 60px;
+    color: #826f64;
+}
+/*聯絡資料*/
+.contact{
+    position: absolute;
+    top: 270px;
+    left: 400px;
+    font-size: 16px;
+    color:#826f64;
+}
+/*自我介紹*/
+.intro{
+    background-color: white;
+    max-width: 100%;
+    width: 1200px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 8px #a7826a;
+}
+.intro h3 {
+    color: #826f64;
+    font-size: 20px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #826f64;
+    padding-bottom: 5px;
+}
+.intro p {
+    line-height: 2;
+    color: #826f64;
+}
+/*背景*/
+body{
+    background-color: #f3eae0;
+    padding: 0;
+    margin: 0;
+}
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+header{
+    background-color: #826f64;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 2px;
+}
+
+nav a{
+    padding: 14px 16px;
+    display:inline-block;
+}
+
+.card {
+    background: rgb(206, 186, 155);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+.card-contact{
+    text-align:justify;
+}
+.img-interest{
+    width: 60%;
+    height: 60%;
+}
+
+.img-learn{
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 60%;
+}
+/*個人技能圓餅圖*/
+.pie-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.pie-chart::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.skills-chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.chart-item {
+    text-align: center;
+}
+
+.skill-60 {
+    background: conic-gradient(
+        #826f64 0%,
+        #826f64 60%,
+        #e0e0e0 60%
+    );
+}
+
+.skill-65 {
+    background: conic-gradient(
+        #826f64 0%,
+        #826f64 65%, 
+        #e0e0e0 65% 
+    );
+}
+
+.skill-75 {
+    background: conic-gradient(
+        #826f64 0%,
+        #826f64 75%,
+        #e0e0e0 75%
+    );
+}
+
+.skill-80 {
+    background: conic-gradient(
+        #826f64 0%,
+        #826f64 80%,
+        #e0e0e0 80%
+    );
+}
+main {
+    max-width: 100%;
+    width: 1200px;            
+    margin: 20px auto;   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+aside{
+    text-align: center;
+    grid-area: 3/1/4/4;
+}
+.ontop{
+    position: fixed;
+    right: 0px;
+    bottom: 20px;
+    z-index: 1000;
+    padding: 10px 15px; 
+    background-color: #826f64;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
